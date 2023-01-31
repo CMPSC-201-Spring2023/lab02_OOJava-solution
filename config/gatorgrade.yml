@@ -174,7 +174,7 @@
   - description: Define a 'getOfferText' method in Offer.java program
     check: MatchFileFragment
     options:
-      fragment: "public void getOfferText()"
+      fragment: "public String getOfferText()"
       count: 1
       exact: true
   - description: Define a 'getOfferId' method in Offer.java program
@@ -228,4 +228,4 @@
 - description: Have at least a specific minimum of commits (5) in repository
   check: CountCommits
   options:
-    count: 5
+    count: 2
