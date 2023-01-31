@@ -1,5 +1,5 @@
 - src/Atm.java:
-    - description: Ensure that Atm.java file exists in the src/ directory
+  - description: Ensure that Atm.java file exists in the src/ directory
     check: ConfirmFileExists
   - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Atm.java
     check: MatchFileFragment
@@ -174,7 +174,7 @@
   - description: Define a 'getOfferText' method in Offer.java program
     check: MatchFileFragment
     options:
-      fragment: "public void getOfferText("
+      fragment: "public void getOfferText()"
       count: 1
       exact: true
   - description: Define a 'getOfferId' method in Offer.java program
@@ -209,7 +209,7 @@
     check: CountMarkdownTags
     options:
       tag: heading
-      count: 8
+      count: 6
       exact: true
   - description: Confirm that the markdown file has the correct number of code blocks
     check: CountMarkdownTags
