@@ -1,5 +1,3 @@
-package labseven;
-
 /**
 * Account class that creates an Account
 * It has one constructor and three methods.

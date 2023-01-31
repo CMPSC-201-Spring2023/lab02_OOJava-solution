@@ -1,5 +1,3 @@
-package labseven;
-
 /**
 * Offer class that creates an offer
 * It has two constructors and two methods - credit and getBalance.
