@@ -228,4 +228,4 @@
 - description: Have at least a specific minimum of commits (5) in repository
   check: CountCommits
   options:
-    count: 2
+    count: 5

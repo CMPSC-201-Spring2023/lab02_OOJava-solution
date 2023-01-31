@@ -139,7 +139,7 @@ The source code of the two Java file must also pass additional tests set by the 
 
 ## Expected Program Output
 
-Due to the different input values passed to this program, running the program produces textual output that will differ from the instructor's version shown below. Your program must adhere to all of the requirements for the assignment and pass all of the verification checks, producing textual output that follows the pattern that is given on the assignment sheet.
+Due to the different input values passed to this program, running the program produces textual output that will differ from the instructor's version shown below. Your program must adhere to all of the requirements for the assignment and pass all of the verification checks, producing textual output that follows the pattern that is specified in the program requirements.
 
 ```
 Welcome to JJ ATM!
@@ -156,10 +156,6 @@ Offer id 123: Get $10 back when you spend $3000 in 30 days. Offer valid until 11
 
 Thank you for using JJ ATM!
 ```
-
-## Receiving Assistance
-
-If you are having trouble completing any part of this project, then please talk with either the course instructor or a teaching assistant during the laboratory session. Alternatively, you may ask questions in the Slack team for this course. Finally, you can schedule a meeting during the course instructor's office hours.
 
 ## Assignment Assessment
 
