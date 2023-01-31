@@ -1,0 +1,231 @@
+- src/Atm.java:
+    - description: Ensure that Atm.java file exists in the src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Atm.java
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of Javadoc (i.e., multiple-line) comments in Atm.java
+    check: CountMultipleLineComments
+    options:
+      language: "Java"
+      count: 2
+      exact: false
+  - description: Create a sufficient number of single-line comments in Atm.java
+    check: CountSingleLineComments
+    options:
+      language: "Java"
+      count: 5
+      exact: false
+  - description: Add correct 'author' tag in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "@author"
+      count: 1
+      exact: true
+  - description: Replace 'Add Your Name Here' text with your name in Atm.java
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Add correct number of println statements in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "System.out.println"
+      count: 10
+      exact: false
+  - description: Add correct number of 'if' statements in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "if"
+      count: 2
+      exact: false
+  - description: Add correct number of 'else' statements in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "else"
+      count: 2
+      exact: false
+  - description: Call 'getBalance' method at least 3 times in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "getBalance"
+      count: 3
+      exact: false
+  - description: Call 'withdraw' method at least 1 time in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "withdraw"
+      count: 1
+      exact: false
+  - description: Call 'deposit' method at least 1 time in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "deposit"
+      count: 1
+      exact: false
+  - description: Create an instance of the Account class in Atm.java program
+    check: MatchFileFragment
+    options:
+      fragment: "new Account("
+      count: 1
+      exact: false
+
+- src/Account.java:
+  - description: Ensure that Account.java file exists in the src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Account.java
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of Javadoc (i.e., multiple-line) comments in Account.java
+    check: CountMultipleLineComments
+    options:
+      language: "Java"
+      count: 2
+      exact: false
+  - description: Add correct 'author' tag in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "@author"
+      count: 1
+      exact: true
+  - description: Ensure no print statements exist in Account.java program
+    check: MatchFileFragment
+    options:
+      fragment: "println("
+      count: 0
+      exact: true
+  - description: Define a constructor in Account.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public Account"
+      count: 1
+      exact: true
+  - description: Define a 'deposit' method in Account.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public void deposit("
+      count: 1
+      exact: true
+  - description: Define a 'withdraw' method in Account.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public void withdraw("
+      count: 1
+      exact: true
+  - description: Define a 'getBalance' method in Account.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public double getBalance("
+      count: 1
+      exact: true
+  - description: Use an 'if' statement at least once in Account.java program
+    check: MatchFileFragment
+    options:
+      fragment: "if"
+      count: 1
+      exact: false
+
+- src/Offer.java:
+  - description: Ensure that Offer.java file exists in the src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Offer.java
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of Javadoc (i.e., multiple-line) comments in Offer.java
+    check: CountMultipleLineComments
+    options:
+      language: "Java"
+      count: 5
+      exact: false
+  - description: Add correct 'author' tag in Offer.java program
+    check: MatchFileFragment
+    options:
+      fragment: "@author"
+      count: 1
+      exact: true
+  - description: Ensure no println statements exist in Offer.java program
+    check: MatchFileFragment
+    options:
+      fragment: "System.out.println"
+      count: 0
+      exact: true
+  - description: Define a constructor in Offer.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public Offer"
+      count: 1
+      exact: true
+  - description: Define a 'setOffer' method in Offer.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public void setOffer("
+      count: 1
+      exact: true
+  - description: Define a 'getOfferText' method in Offer.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public void getOfferText("
+      count: 1
+      exact: true
+  - description: Define a 'getOfferId' method in Offer.java program
+    check: MatchFileFragment
+    options:
+      fragment: "public int getOfferId("
+      count: 1
+      exact: true
+
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that the reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the reflection file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Write a minimum number of meaningful words in the reflection
+    check: CountFileWords
+    options:
+      count: 350
+      exact: false
+  - description: Confirm that the markdown file has the correct number of headers
+    check: CountMarkdownTags
+    options:
+      tag: heading
+      count: 8
+      exact: true
+  - description: Confirm that the markdown file has the correct number of code blocks
+    check: CountMarkdownTags
+    options:
+      tag: code
+      count: 3
+      exact: false
+  - description: Confirm that the markdown file has the correct number of fenced code blocks
+    check: CountMarkdownTags
+    options:
+      tag: code_block
+      count: 1
+      exact: true
+
+# confirm a suitable number of commit messages
+- description: Have at least a specific minimum of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
